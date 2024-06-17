@@ -1,0 +1,20 @@
+table {
+  width: 100%;
+  border-collapse: separate; /* Allows border-spacing to work */
+  border-spacing: 0 10px; /* Adds space between rows */
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid transparent;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Light grey background for odd rows */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff; /* White background for even rows */
+}

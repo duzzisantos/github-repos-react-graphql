@@ -1,0 +1,115 @@
+/* Sass variables declared here: */
+
+$color-dark: #212529;
+$color-blue: rgb(0, 65, 130);
+$color-teal: teal;
+$table-cell-hover: rgb(211, 247, 253);
+$padding-10: 10px;
+$padding-20: $padding-10 * 2;
+$padding-40: $padding-20 * 2;
+$selected-display: flex;
+$row: row;
+$column: column;
+$mb-20: 20px;
+$mb-40: $mb-20 * 2;
+$fw-600: 600;
+$rounded-box: 5px;
+$input-border: 1px solid rgb(221, 221, 221);
+
+/* Table styles */
+
+.filter-input {
+  padding: 5px;
+  margin: 4px 4px 4px 4px;
+  border-radius: $rounded-box;
+  border: 1px solid transparent;
+  width: fit-content;
+}
+
+.pagination-display {
+  display: $selected-display;
+  flex-direction: $row;
+  width: 30%;
+  margin-top: 40px;
+}
+
+.pagination-count {
+  width: 50%;
+  margin-left: 20px;
+  display: $selected-display;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  height: fit-content;
+}
+
+.pagination-count > span > input {
+  border: $input-border;
+}
+
+.pagination-count > .pagination-expand {
+  width: 100px;
+  border: $input-border;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate; /* Allows border-spacing to work */
+  border-spacing: 0 10px; /* Adds space between rows */
+}
+
+thead {
+  background-color: $color-blue;
+  color: white;
+}
+
+tr {
+  border-spacing: 12px;
+  font-size: 13px;
+}
+
+th,
+td {
+  padding: 10px;
+
+  text-align: left;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+td.fixed-col {
+  background-color: whitesmoke;
+  position: sticky;
+  right: -6px;
+
+  z-index: 1;
+  box-shadow: 0px 0px 5px gray;
+}
+
+th.fixed-header {
+  background-color: $color-blue;
+  position: sticky;
+  box-shadow: 0px 0px 16px gray;
+  right: -12px;
+  z-index: 10;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Light grey background for odd rows */
+}
+
+tbody tr:nth-child(odd):hover {
+  background-color: $table-cell-hover;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff; /* White background for even rows */
+}
+
+tbody tr:nth-child(even):hover {
+  background-color: $table-cell-hover;
+}
+
+.table-filter {
+  text-transform: uppercase;
+}
