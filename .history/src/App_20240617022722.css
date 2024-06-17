@@ -1,0 +1,13 @@
+.container {
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+
+.display-item {
+  width: 80%;
+}

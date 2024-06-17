@@ -1,0 +1,10 @@
+.container {
+  width: 80%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+}
+
+.display-item {
+  width: 80%;
+}

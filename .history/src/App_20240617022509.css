@@ -1,0 +1,12 @@
+.container {
+  width: 80%;
+  align-items: center;
+
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+}
+
+.display-item {
+  width: 80%;
+}

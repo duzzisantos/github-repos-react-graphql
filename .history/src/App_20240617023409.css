@@ -1,0 +1,11 @@
+.container {
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  padding: 10px 10px;
+}
+
+.display-item {
+  width: 100%;
+}
