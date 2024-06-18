@@ -3,7 +3,7 @@ import { gql } from "@apollo/client";
 const GET_ALL_REPOSITORIES = gql`
   query {
     viewer {
-      repositories(first: 100, privacy: PUBLIC) {
+      repositories(first: 500000, privacy: PUBLIC) {
         nodes {
           id
           name
